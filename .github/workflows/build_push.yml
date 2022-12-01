@@ -18,8 +18,8 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: espressif/arduino-esp32
-          ref: 2.0.4
-          path: 2.0.4arduino-esp32
+          ref: 2.0.5
+          path: 2.0.5arduino-esp32
       
       - name: Install TFT_eSPI
         uses: actions/checkout@v2

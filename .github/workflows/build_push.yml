@@ -79,7 +79,7 @@ jobs:
           
       - name: Search for SD lib in arduino-esp32 v2.0.5
         run: |
-          find /home/runner/work/ESP32Marauder/ESP32Marauder/2.0.5arduino-esp32 -name "SD"
+          find /home/runner/work/ESP32Marauder-s3-test/ESP32Marauder-s3-test/2.0.5arduino-esp32 -name "SD"
           
       - name: Configure TFT_eSPI
         run: |
@@ -101,7 +101,7 @@ jobs:
       - name: Replace SD lib
         run: |
           rm -rf /home/runner/.arduino15/packages/esp32/hardware/esp32/2.0.0-rc1/libraries/SD
-          cp -R /home/runner/work/ESP32Marauder/ESP32Marauder/2.0.5arduino-esp32/libraries/SD /home/runner/.arduino15/packages/esp32/hardware/esp32/2.0.0-rc1/libraries/SD
+          cp -R /home/runner/work/ESP32Marauder-s3-test/ESP32Marauder-s3-test/2.0.5arduino-esp32/libraries/SD /home/runner/.arduino15/packages/esp32/hardware/esp32/2.0.0-rc1/libraries/SD
           ls -la /home/runner/.arduino15/packages/esp32/hardware/esp32/2.0.0-rc1/libraries/SD
           
       - name: Modify platform.txt

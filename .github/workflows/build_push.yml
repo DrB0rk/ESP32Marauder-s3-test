@@ -14,7 +14,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
         
-      - name: Pull arduino-esp32 v2.0.4
+      - name: Pull arduino-esp32 v2.0.5
         uses: actions/checkout@v2
         with:
           repository: espressif/arduino-esp32
@@ -101,7 +101,7 @@ jobs:
       - name: Replace SD lib
         run: |
           rm -rf /home/runner/.arduino15/packages/esp32/hardware/esp32/2.0.0-rc1/libraries/SD
-          cp -R /home/runner/work/ESP32Marauder/ESP32Marauder/2.0.4arduino-esp32/libraries/SD /home/runner/.arduino15/packages/esp32/hardware/esp32/2.0.0-rc1/libraries/SD
+          cp -R /home/runner/work/ESP32Marauder/ESP32Marauder/2.0.5arduino-esp32/libraries/SD /home/runner/.arduino15/packages/esp32/hardware/esp32/2.0.0-rc1/libraries/SD
           ls -la /home/runner/.arduino15/packages/esp32/hardware/esp32/2.0.0-rc1/libraries/SD
           
       - name: Modify platform.txt

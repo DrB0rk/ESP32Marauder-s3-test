@@ -100,7 +100,7 @@ jobs:
           
       - name: Replace SD lib
         run: |
-          mkdir /home/runner/.arduino15/packages/esp32/hardware/esp32/2.0.0-rc1/libraries/SD
+          mkdir -p /home/runner/.arduino15/packages/esp32/hardware/esp32/2.0.0-rc1/libraries/SD
           cp -R /home/runner/work/ESP32Marauder-s3-test/ESP32Marauder-s3-test/2.0.5arduino-esp32/libraries/SD /home/runner/.arduino15/packages/esp32/hardware/esp32/2.0.0-rc1/libraries/SD
           ls -la /home/runner/.arduino15/packages/esp32/hardware/esp32/2.0.0-rc1/libraries/SD
           
